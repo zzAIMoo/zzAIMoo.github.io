@@ -29,22 +29,25 @@
 	// navigation
 	var OnePageNav = function () {
 		var navToggler = $('.navbar-toggler');
+		$("#pb-navbar ul li").on('click', function (e) {
+			e.preventDefault();
+			console.log($("#pb-navbar ul li div a").attr('href'));
+			window.location = $("#pb-navbar ul li div a").attr('href');
+		});
 		$(".smoothscroll[href^='#'], #pb-navbar ul li a[href^='#']").on('click', function (e) {
 			e.preventDefault();
 			var hash = this.hash;
-
+			console.log(hash);
 			$('html, body').animate({
-
 				scrollTop: $(hash).offset().top
 			}, 700, 'easeInOutExpo', function () {
 				window.location.hash = hash;
+				return;
 			});
 		});
-		$("#pb-navbar ul li a[href^='#']").on('click', function (e) {
-			if (navToggler.is(':visible')) {
-				navToggler.click();
-			}
-		});
+
+
+
 
 		$('body').on('activate.bs.scrollspy', function () {
 			console.log('nice');
@@ -326,11 +329,11 @@
 
 	$(function () {
 
-		OnePageNav();
+		//OnePageNav();
 		offCanvasNav();
 		contentWayPoint();
 		navbarState();
-		clickMenu();
+		//clickMenu();
 		smoothScroll();
 		portfolioMasonry();
 	});
