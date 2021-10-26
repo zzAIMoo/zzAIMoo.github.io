@@ -11,6 +11,19 @@ html {
   scroll-behavior: smooth;
 }
 
+.site-navbar .nav-item {
+  backdrop-filter: blur(4px);
+}
+
+.site-navbar .nav-item:first-of-type {
+  backdrop-filter: blur(4px);
+  border-radius: 10px 0px 0px 0px;
+}
+
+.site-navbar .nav-item:last-of-type {
+  backdrop-filter: blur(4px);
+  border-radius: 0px 10px 0px 0px;
+}
 
 .site-navbar .nav-item:hover {
   background-color: rgba(0, 0, 0, 0.3) !important;
@@ -24,6 +37,7 @@ html {
   float: left;
   overflow: hidden;
 }
+
 
 .dropdown .dropbtn {
   font-size: 16px;
@@ -49,25 +63,27 @@ html {
 .dropdown-content {
   position: absolute;
   color: white;
-  min-width: 160px;
-  backdrop-filter: blur(3px);
+  min-width: 145px;
+  backdrop-filter: blur(4px);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .scrolled .dropdown-content {
   position: absolute;
   color: white;
-  min-width: 1rem;
   background-color: white;
+  min-width: 145px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .scrolled .dropdown-content a {
   float: none;
   color: rgba(0, 0, 0, 0.7);
-  padding: 12px 16px;
+  padding: 12px 12px 16px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -84,13 +100,25 @@ html {
 
 .dropdown-content a:hover {
   background-color: rgba(0, 0, 0, 0.3) !important;
-
   color: white;
 }
+
+.dropdown-content a:last-of-type:hover {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  color: white;
+  border-radius: 0px 0px 10px 10px;
+}
+
 
 .scrolled .dropdown-content a:hover {
   background-color: rgba(0, 0, 0, 0.05) !important;
   color: rgb(212, 102, 212);
+}
+
+.scrolled .dropdown-content a:last-of-type:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  color: rgb(212, 102, 212);
+  border-radius: 0px 0px 10px 10px;
 }
 
 .dropdown:hover .dropdown-content {
