@@ -7,6 +7,93 @@ body {
   font-weight: 300;
 }
 
+
+.site-navbar .nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.site-navbar.scrolled .nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  position: absolute;
+  color: white;
+  min-width: 160px;
+  backdrop-filter: blur(3px);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.scrolled .dropdown-content {
+  position: absolute;
+  color: white;
+  min-width: 1rem;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.scrolled .dropdown-content a {
+  float: none;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+
+  color: white;
+}
+
+.scrolled .dropdown-content a:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+
+  color: purple;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .p1-gradient-bg,
 .thumb .overlay-bg {
   background: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
@@ -19,6 +106,7 @@ body {
   background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
   background: -ms-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -60,7 +148,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-  color: #b2c251;
+  color: purple;
   text-decoration: none;
 }
 
@@ -132,7 +220,7 @@ a:active {
 }
 
 .site-navbar .navbar-nav.active>a {
-  color: #bac964 !important;
+  color: puple !important;
 }
 
 .site-navbar.scrolled {
@@ -178,7 +266,7 @@ a:active {
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
-  background: #bac964 !important;
+  background: purple !important;
 }
 
 .site-navbar.scrolled .navbar-brand {
@@ -194,15 +282,15 @@ a:active {
 }
 
 .site-navbar.scrolled .navbar-nav>li>a:hover {
-  color: #bac964 !important;
+  color: purple !important;
 }
 
 .site-navbar.scrolled .navbar-nav>li>a.active {
-  color: #bac964 !important;
+  color: rgb(93, 1, 93) !important;
 }
 
 .site-navbar.scrolled .navbar-nav>li.active>a {
-  color: #bac964 !important;
+  color: rgb(93, 1, 93) !important;
 }
 
 .site-hero {
