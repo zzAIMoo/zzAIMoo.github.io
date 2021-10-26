@@ -86,8 +86,7 @@ body {
 
 .scrolled .dropdown-content a:hover {
   background-color: rgba(0, 0, 0, 0.05) !important;
-
-  color: purple;
+  color: rgb(212, 102, 212);
 }
 
 .dropdown:hover .dropdown-content {
@@ -142,13 +141,13 @@ a {
   -webkit-transition: .3s all;
   -o-transition: .3s all;
   transition: .3s all;
-  color: #bac964;
+  color: rgb(212, 102, 212);
 }
 
 a:hover,
 a:focus,
 a:active {
-  color: purple;
+  color: rgb(151, 73, 151);
   text-decoration: none;
 }
 
@@ -266,7 +265,7 @@ a:active {
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
-  background: purple !important;
+  background: rgb(212, 102, 212) !important;
 }
 
 .site-navbar.scrolled .navbar-brand {
@@ -282,15 +281,15 @@ a:active {
 }
 
 .site-navbar.scrolled .navbar-nav>li>a:hover {
-  color: purple !important;
+  color: rgb(165, 79, 165) !important;
 }
 
 .site-navbar.scrolled .navbar-nav>li>a.active {
-  color: rgb(93, 1, 93) !important;
+  color: rgb(212, 102, 212) !important;
 }
 
 .site-navbar.scrolled .navbar-nav>li.active>a {
-  color: rgb(93, 1, 93) !important;
+  color: rgb(212, 102, 212) !important;
 }
 
 .site-hero {
@@ -393,7 +392,7 @@ a:active {
   display: block;
   margin-bottom: 50px;
   background: #edf0f2;
-  background: #bac964;
+  background: rgb(212, 102, 212);
   width: 100px;
   height: 100px;
   position: relative;
@@ -479,12 +478,15 @@ a:active {
 
 .btn.btn-primary {
   color: #fff;
+  background-color: rgb(212, 102, 212) !important;
+  border-color: rgb(212, 102, 212) !important;
 }
 
 .btn.btn-primary:hover,
 .btn.btn-primary:active,
 .btn.btn-primary:focus {
-  background: #b2c251;
+  background-color: rgb(148, 71, 148) !important;
+  border-color: rgb(148, 71, 148) !important;
 }
 
 .progress {
@@ -494,13 +496,13 @@ a:active {
 }
 
 .progress .progress-bar {
-  background-color: #bac964;
+  background-color: rgb(212, 102, 212);
   position: relative;
   border-radius: 4px;
 }
 
 .progress .progress-bar span {
-  background-color: #bac964;
+  background-color: rgb(212, 102, 212);
   position: absolute;
   bottom: -20px;
   font-size: 10px;
@@ -520,7 +522,7 @@ a:active {
   position: absolute;
   pointer-events: none;
   border-color: rgba(255, 255, 255, 0);
-  border-bottom-color: #bac964;
+  border-bottom-color: rgb(212, 102, 212);
   border-width: 5px;
   margin-left: -5px;
 }
@@ -548,11 +550,11 @@ a:active {
 }
 
 .filters ul li:hover {
-  color: #bac964;
+  color: rgb(173, 84, 173);
 }
 
 .filters ul li.active {
-  color: #bac964;
+  color: rgb(212, 102, 212);
 }
 
 .single-portfolio {
@@ -581,7 +583,7 @@ a:active {
 /*--------- Start Portfolio Area -------------*/
 .portfolio-area .primary-btn {
   color: #fff;
-  background-color: #bac964;
+  background-color: rgb(212, 102, 212);
   margin-left: auto;
   margin-right: auto;
 }
@@ -632,7 +634,7 @@ a:active {
 }
 
 .portfolio-area .filters ul li.active {
-  color: #bac964;
+  color: rgb(212, 102, 212);
 }
 
 .portfolio-area .filters-content {
@@ -763,7 +765,7 @@ a:active {
 }
 
 .resume-item h3 {
-  color: #bac964;
+  color: rgb(212, 102, 212);
   font-size: 20px;
 }
 
@@ -810,7 +812,7 @@ a:active {
 }
 
 .blog-entry .blog-entry-text h3 a:hover {
-  color: #bac964;
+  color: rgb(212, 102, 212);
 }
 
 .blog-entry .meta {
@@ -824,7 +826,7 @@ a:active {
 }
 
 .blog-entry .meta a:hover {
-  color: #bac964;
+  color: rgb(212, 102, 212);
 }
 
 .form-control {
