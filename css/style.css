@@ -7,6 +7,10 @@ body {
   font-weight: 300;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 .site-navbar .nav-item:hover {
   background-color: rgba(0, 0, 0, 0.3) !important;
