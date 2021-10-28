@@ -11,21 +11,21 @@ html {
   scroll-behavior: smooth;
 }
 
-.site-navbar .nav-item {
-  backdrop-filter: blur(4px);
+.site-navbar:not(.mobile) .nav-item {
+  backdrop-filter: blur(4px) !important;
 }
 
-.site-navbar .nav-item:first-of-type {
+.site-navbar:not(.mobile) .nav-item:first-of-type {
   backdrop-filter: blur(4px);
   border-radius: 10px 0px 0px 0px;
 }
 
-.site-navbar .nav-item:last-of-type {
+.site-navbar:not(.mobile) .nav-item:last-of-type {
   backdrop-filter: blur(4px);
   border-radius: 0px 10px 0px 0px;
 }
 
-.site-navbar .nav-item:hover {
+.site-navbar:not(.mobile) .nav-item:hover {
   background-color: rgba(0, 0, 0, 0.3) !important;
 }
 
@@ -65,6 +65,16 @@ html {
   color: white;
   min-width: 145px;
   backdrop-filter: blur(4px);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.dropdown-content .mobile {
+  position: absolute;
+  color: white;
+  min-width: 145px;
+  background-color: inherit;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 0px 0px 10px 10px;
