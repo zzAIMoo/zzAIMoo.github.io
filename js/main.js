@@ -33,6 +33,7 @@ function toggleGame() {
 }
 
 function toggleSound() {
+    //test
     if ($(this).hasClass('mute')) {
         $(this).removeClass('mute').text('Mute');
         document.getElementById("game").contentWindow.postMessage('{"method":"setVolume", "value":1}', '*');
