@@ -25,3 +25,7 @@ window.mobileCheck = function () {
     })(navigator.userAgent || navigator.vendor || window.opera);
     return check; //ritorna true se è mobile
 };
+
+function toggleGame() {
+    document.getElementById("game").hidden = !document.getElementById("game").hidden;
+}
