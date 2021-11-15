@@ -34,11 +34,11 @@ function toggleGame() {
 
 function toggleSound() {
     //test
-    if ($(this).hasClass('mute')) {
-        $(this).removeClass('mute').text('Mute');
+    if ($("#muteBtn").hasClass('mute')) {
+        $("#muteBtn").removeClass('mute').text('Mute');
         document.getElementById("game").contentWindow.postMessage('{"method":"setVolume", "value":1}', '*');
     } else {
-        $(this).addClass('mute').text('Unmute');
+        $("#muteBtn").addClass('mute').text('Unmute');
         document.getElementById("game").contentWindow.postMessage('{"method":"setVolume", "value":0}', '*');
     }
 }
