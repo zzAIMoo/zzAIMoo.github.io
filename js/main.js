@@ -28,4 +28,16 @@ window.mobileCheck = function () {
 
 function toggleGame() {
     document.getElementById("game").hidden = !document.getElementById("game").hidden;
+
+
+}
+
+function toggleSound() {
+    if ($(this).hasClass('mute')) {
+        $(this).removeClass('mute').text('Mute');
+        document.getElementById("game").contentWindow.postMessage('{"method":"setVolume", "value":1}', '*');
+    } else {
+        $(this).addClass('mute').text('Unmute');
+        document.getElementById("game").contentWindow.postMessage('{"method":"setVolume", "value":0}', '*');
+    }
 }
