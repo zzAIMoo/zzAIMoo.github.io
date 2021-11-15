@@ -34,7 +34,7 @@ function toggleGame() {
 
 function toggleSound() {
     //test
-    var iframe = document.getElementById('game')[0];
+    var iframe = document.getElementById('game');
     var player = $f(iframe);
     if ($("#muteBtn").hasClass('mute')) {
         $("#muteBtn").removeClass('mute').text('Mute');
