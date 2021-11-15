@@ -34,11 +34,19 @@ function toggleGame() {
 
 function toggleSound() {
     //test
+    var iframe = document.getElementById('game')[0];
+    var player = $f(iframe);
     if ($("#muteBtn").hasClass('mute')) {
         $("#muteBtn").removeClass('mute').text('Mute');
+        player.addEvent('ready', function () {
+            player.api('setVolume', 100);
+        });
         document.getElementById("game").contentWindow.postMessage('{"method":"setVolume", "value":1}', '*');
     } else {
         $("#muteBtn").addClass('mute').text('Unmute');
+        player.addEvent('ready', function () {
+            player.api('setVolume', 0);
+        });
         document.getElementById("game").contentWindow.postMessage('{"method":"setVolume", "value":0}', '*');
     }
 }
