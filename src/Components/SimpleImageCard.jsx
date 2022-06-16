@@ -1,19 +1,13 @@
-import React from "react";
-import Image from "next/image";
+import { React } from "react";
 import SimpleBreadcrumb from "./SimpleBreadcrumb";
-
-const imageLoader = () => {
-    return `https://images.unsplash.com/photo-1639680957169-ebff920c7e23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80`;
-};
-
+import image from "../Assets/images/misc/logo.png";
 const SimpleImageCard = ({ children }) => {
     return (
         <>
-            <div className="max-w-xs p-1 bg-purple-300 shadow-2xl shadow-purple-500 rounded-2xl dark:bg-slate-300 dark:shadow-slate-700">
-                <Image
+            <div className="max-w-xs p-1 bg-primary-light shadow-2xl shadow-secondary-light rounded-2xl dark:bg-primary-dark dark:shadow-tertiary-dark">
+                <img
                     className=" rounded-xl"
-                    loader={imageLoader}
-                    src="image.png"
+                    src={image}
                     alt="Coffee and christmas tree"
                     width={1920}
                     height={1080}

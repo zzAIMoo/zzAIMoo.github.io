@@ -17,10 +17,12 @@ module.exports = {
       colors: {
         "light-mode": '#F0E9D8',
         "dark-mode": '#121212',
-        "primary-light": '#D8B4FE',
-        "primary-dark": '#CBD5E1',
-        "secondary-light": '#6B21A8',
-        "secondary-dark": '#94A3B8',
+        "primary-light": '#C4B5FD', //violet-300
+        "secondary-light": '#A78bfA', //violet-400
+        "tertiary-light": '#7C3AED', //violet-800
+        "primary-dark": '#CBD5E1', //slate-300
+        "secondary-dark": '#94A3B8', //slate-400
+        "tertiary-dark": '#1E293B', //slate-800
       }
     },
   },
