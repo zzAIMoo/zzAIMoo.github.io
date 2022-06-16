@@ -10,7 +10,7 @@ export default class Layout extends React.Component {
     render() {
         return (
             <>
-                <div className="custom-scrollbar">
+                <div className="custom-scrollbar bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
                     <Header>{this.props.children}</Header>
                     <Body>{this.props.children}</Body>
                     <Footer>{this.props.children}</Footer>
