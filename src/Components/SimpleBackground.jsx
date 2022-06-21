@@ -6,7 +6,7 @@ const SimpleBackground = ({ children, customClasses }) => {
             <div
                 className={`${
                     customClasses ?? ""
-                } flex items-center justify-center p-6 bg-primary-light shadow-xl shadow-secondary-light min-h-[10rem] min-w-[10rem] rounded-2xl dark:bg-primary-dark dark:shadow-tertiary-dark`}
+                } flex items-center justify-center p-6 bg-primary-light shadow-xl shadow-secondary-light min-h-[10rem] min-w-[10rem] rounded-2xl dark:bg-primary-dark dark:shadow-tertiary-dark transition-all duration-300`}
             >
                 {children}
             </div>

@@ -10,11 +10,11 @@ export default class Layout extends React.Component {
     render() {
         return (
             <>
-                <div className="custom-scrollbar bg-light-mode dark:bg-dark-mode transition-colors max-h-screen duration-300 h-screen overflow-x-hidden">
-                    <Header>{this.props.children}</Header>
+                <Header>{this.props.children}</Header>
+                <div className="pb-8 bg-gradient-to-b from-teal-500 to-black custom-scrollbar">
                     <Body>{this.props.children}</Body>
-                    <Footer>{this.props.children}</Footer>
                 </div>
+                <Footer>{this.props.children}</Footer>
             </>
         );
     }

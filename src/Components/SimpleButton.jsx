@@ -6,7 +6,7 @@ const SimpleButton = ({ children, customClasses, text, ...buttonProps }) => {
             <button
                 className={`${
                     customClasses ?? ""
-                } px-4 py-2 transition-all duration-300 rounded-full shadow-lg bg-primary-light dark:bg-primary-dark text-black font-bold dark:shadow-secondary-dark dark:hover:bg-secondary-dark hover:bg-secondary-light shadow-secondary-light `}
+                } px-4 py-2 rounded-full shadow-lg bg-primary-light dark:bg-primary-dark text-black font-bold dark:shadow-secondary-dark dark:hover:bg-secondary-dark hover:bg-secondary-light shadow-secondary-light transition-all duration-300`}
                 {...buttonProps}
             >
                 {text ?? children}

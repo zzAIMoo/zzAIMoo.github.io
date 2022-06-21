@@ -5,9 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Footer = () => {
     return (
         <>
-            <footer>
-                <div className="flex max-w-screen my-8 mx-32 items-center justify-center rounded-2xl shadow-xl bg-primary-light shadow-secondary-light dark:bg-primary-dark dark:shadow-tertiary-dark">
-                    <div className="flex flex-col items-center col-start-1 col-end-4 row-span-2 sm:col-span-4 sm:col-end-5 my-12">
+            <footer className="pb-8 bg-black">
+                <div className="flex items-center justify-center mx-32 transition-all duration-300 shadow-xl max-w-screen rounded-2xl bg-primary-light shadow-secondary-light dark:bg-primary-dark dark:shadow-tertiary-dark">
+                    <div className="flex flex-col items-center col-start-1 col-end-4 row-span-2 my-12 sm:col-span-4 sm:col-end-5">
                         <p className="mb-4">
                             <strong className="font-medium">
                                 Simone Sechi
@@ -15,7 +15,7 @@ const Footer = () => {
                         </p>
                         <div className="flex mt-2 mb-8 -mx-2">
                             <a href="https://www.instagram.com/_simonesechi/">
-                                <button className="flex items-center justify-center w-12 h-12 p-2 mx-2 rounded-full shadow-md shadow-secondary-light dark:shadow-secondary-dark hover:bg-secondary-light dark:hover:bg-secondary-dark transition-all duration-300">
+                                <button className="flex items-center justify-center w-12 h-12 p-2 mx-2 transition-all duration-300 rounded-full shadow-md shadow-secondary-light dark:shadow-secondary-dark hover:bg-secondary-light dark:hover:bg-secondary-dark">
                                     <FontAwesomeIcon
                                         icon="fa-brands fa-instagram"
                                         className="w-6 h-6"
@@ -23,7 +23,7 @@ const Footer = () => {
                                 </button>
                             </a>
                             <a href="https://www.linkedin.com/in/simone-sechi-721485218/">
-                                <button className="flex items-center justify-center w-12 h-12 p-2 mx-2 rounded-full shadow-md shadow-secondary-light dark:shadow-secondary-dark hover:bg-secondary-light dark:hover:bg-secondary-dark transition-all duration-300">
+                                <button className="flex items-center justify-center w-12 h-12 p-2 mx-2 transition-all duration-300 rounded-full shadow-md shadow-secondary-light dark:shadow-secondary-dark hover:bg-secondary-light dark:hover:bg-secondary-dark">
                                     <FontAwesomeIcon
                                         icon="fa-brands fa-linkedin-in"
                                         className="w-6 h-6"
@@ -31,7 +31,7 @@ const Footer = () => {
                                 </button>
                             </a>
                             <a href="https://github.com/zzAIMoo">
-                                <button className="flex items-center justify-center w-12 h-12 p-2 mx-2 rounded-full shadow-md shadow-secondary-light dark:shadow-secondary-dark hover:bg-secondary-light dark:hover:bg-secondary-dark transition-all duration-300">
+                                <button className="flex items-center justify-center w-12 h-12 p-2 mx-2 transition-all duration-300 rounded-full shadow-md shadow-secondary-light dark:shadow-secondary-dark hover:bg-secondary-light dark:hover:bg-secondary-dark">
                                     <FontAwesomeIcon
                                         icon="fa-brands fa-github-alt"
                                         className="w-6 h-6"
@@ -43,7 +43,7 @@ const Footer = () => {
                             Made with 💜 by Simone Sechi &nbsp;
                             <img
                                 src={logo}
-                                className="motion-safe:animate-spin spee w-6 inline-block"
+                                className="inline-block w-6 motion-safe:animate-spin spee"
                                 alt="logo"
                             ></img>
                         </p>

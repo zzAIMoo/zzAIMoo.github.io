@@ -4,7 +4,7 @@ import image from "../Assets/images/misc/logo.png";
 const SimpleImageCard = ({ children }) => {
     return (
         <>
-            <div className="max-w-xs p-1 bg-primary-light shadow-2xl shadow-secondary-light rounded-2xl dark:bg-primary-dark dark:shadow-tertiary-dark">
+            <div className="max-w-xs p-1 transition-all duration-300 shadow-2xl bg-primary-light shadow-secondary-light rounded-2xl dark:bg-primary-dark dark:shadow-tertiary-dark">
                 <img
                     className=" rounded-xl"
                     src={image}
